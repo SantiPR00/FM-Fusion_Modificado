@@ -1,0 +1,1 @@
+{"raw_tags": "appliance. closet. fridge. gas stove. home appliance. kitchen. oven. photo. stove. white", "tags": "closet. fridge", "mask": [{"value": 0, "label": "background"}, {"value": 1, "labels": {"closet": 0.2933068871498108, "fridge": 0.5790137648582458}, "box": [231.02310180664062, 22.414459228515625, 614.9210205078125, 477.5494079589844]}]}

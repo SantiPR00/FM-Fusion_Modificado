@@ -1,0 +1,1 @@
+{"raw_tags": "appliance. fridge. gas stove. home appliance. kitchen. oven. stove. white", "tags": "fridge", "mask": [{"value": 0, "label": "background"}, {"value": 1, "labels": {"fridge": 0.7817781567573547}, "box": [214.06182861328125, 2.46697998046875, 604.6725463867188, 477.77117919921875]}]}

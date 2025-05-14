@@ -1,0 +1,55 @@
+dataset: realsense
+Instance: 
+ - voxel_length: 0.02
+ - sdf_trunc: 0.04
+ - image shape: 640, 480
+ - intrinsic fx,fy,cx,cy: 619.18, 618.17, 336.51, 246.95
+ - max_label_measures: 20
+ - min_voxel_weight: 0.1
+ - cluster_eps: 0.05
+ - cluster_min_points: 20
+Mapping: 
+ - depth_scale: 1000
+ - depth_max: 4
+ - min_active_points: 80
+ - min_det_masks: 150
+ - max_box_area_ratio: 0.9
+ - query_depth_vx_size: -1
+ - search_radius: 4
+ - dilation_size: 3
+ - min_iou: 0.2
+ - min_voxel_weight: 0
+ - shape_min_points: 500
+ - merge_iou: 0.4
+ - merge_inflation: 3.5
+ - realtime_merge_floor: 1
+ - min_observation: 2
+ - update_period: 20
+ - recent_window_size: 240
+ - bayesian_semantic_likelihood: 
+ - bayesian_semantic: 0
+ - save_da_dir: 
+Graph: 
+ - edge_radius_ratio: 2
+ - voxel_size: 0.02
+ - involve_floor_edge: 1
+ - ignore_labels: ceiling.
+SGNet: 
+ - token_padding: 8
+ - triplet_number: 20
+ - warm_up_iter: 10
+ - instance_match_threshold: 0.05
+Shape encoder: 
+ - num_stages: 4
+ - voxel_size: 0.05
+ - neighbor_limits: 33, 9, 9, 9
+ - init_radius: 0.0625
+ - K_shape_samples: 1024
+ - K_match_samples: 128
+ - padding: random
+Loop detector: 
+ - fuse_shape: 1
+ - lcd_nodes: 3
+ - recall_nodes: 2
+Registration: 
+ - noise_bound_vec: 1.00, 

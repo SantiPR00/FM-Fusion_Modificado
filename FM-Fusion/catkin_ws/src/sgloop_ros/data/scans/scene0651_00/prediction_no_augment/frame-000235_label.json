@@ -1,0 +1,1 @@
+{"raw_tags": "appliance. cabinet. closet. counter top. dish washer. exhaust hood. gas stove. home appliance. kitchen. oven. silver. stove. white", "tags": "cabinet. closet. counter top", "mask": [{"value": 0, "label": "background"}, {"value": 1, "labels": {"cabinet": 0.5346984267234802}, "box": [2.4279327392578125, 2.6675949096679688, 374.34661865234375, 176.16278076171875]}]}

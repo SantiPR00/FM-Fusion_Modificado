@@ -1,0 +1,39 @@
+%YAML:1.0
+
+dataset: "rio"  # scannet, fusion_portable, realsense
+
+# camera parameters 
+image_width: 960
+image_height: 540
+camera_fx: 756.832
+camera_fy: 756.026
+camera_cx: 492.889
+camera_cy: 270.419
+depth_scale: 1000.0
+depth_max: 5.0
+
+# volumetric 
+voxel_length: 0.02
+sdf_trunc: 0.04
+min_active_points: 100 # active instances
+shape_min_points: 500 # export and bbox extract
+
+# associations
+min_det_masks: 100 # pixel-wise
+max_box_area_ratio: 0.9 # box_area/image_area
+query_depth_vx_size: -1.0
+dilate_kernal: 3 
+min_iou: 0.3
+search_radius: 10.0
+
+# shape
+min_voxel_weight: 0.1 # weight/observation_count
+
+# merge over-segmentation
+merge_inflation: 3.5
+merge_iou: 0.4
+cleanup_period: 6600
+
+# output
+save_da_images: 0 # 1 for save
+tmp_dir: "/data2/3rscan_raw/viz"
