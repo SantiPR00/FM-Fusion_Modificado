@@ -39,12 +39,19 @@ source devel/setup.bash
 ## Folder Structure
 
 ```
-FM-Fusion_Modificado/
+repolidar/
 ├── FM-Fusion/
-│   ├── launch/
-│   ├── src/
+│   ├── catkin_ws/
+|        └── src/
+|            └── sgloop_ros/
+|                └── data/
+|                └── include/
+|                └── launch/
+|                └── msg/
+|                └── src/
 │   ├── config/
-│   └── include/
+│   ├── install/
+│   └── scripts/
 ├── Glog/
 │   └── glog/
 ├── open3d/
